@@ -2,16 +2,18 @@
   <v-row color="primary" justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
     <v-card>
-      <v-layout justify-content>
+      <!-- <v-layout justify-content>
         <v-img src="/skytree1.jpg"
         max-height="120"
         max-width="120"
         aspect-ratio="1" />
-         <v-spacer></v-spacer>
+      </v-layout>
+         <v-spacer></v-spacer> -->
+      <v-layout>
         <v-img 
         src="/tokyotower1.jpg"
-        max-height="120"
-        max-width="120"
+        max-height="200"
+        max-width="200"
         aspect-ratio="1"/>
       </v-layout>
       　<v-card-title class="headline">
