@@ -67,7 +67,7 @@ export default {
   data () {
     return {
       items: [
-        {name :'like',to :"/like"},
+        {name :'Like',to :"/like"},
         {name :'Skill',to :"skill"},
         {name : 'Want',to :"want"},
       ],
