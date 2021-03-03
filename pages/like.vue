@@ -1,20 +1,42 @@
 <template>
   <v-layout row justify-center>
-    <v-col cols="12" sm="8" md="6">
-    <v-card>
-      　<v-card-title class="headline">
+    <!-- <v-flex xs12> -->
+      <v-col cols="12" sm="8" md="6">
+      <v-card >
+        <v-card-title>
           好きなもの
         </v-card-title>
+        <v-col>
         <v-card-text>
-          <p>超高層ビル:東京都庁</p>
-          <p>建築物：国立新美術館</p>
-          <p>食べ物：ラーメン</p>
+          <v-layout row wrap>
+            <v-flex xs9
+            >
+            <v-layout row wrap>
+                <template v-for="(data, i) in datasets">
+                  <v-flex :key="i" xs3 class="accent blue">
+                    {{ data.name }}
+                  </v-flex>
+                  <v-flex
+                    :key="i"
+                    xs9
+                    class="accent lighten-5"
+                    v-html="data.description"
+                  >
+                  </v-flex>
+                </template>
+              </v-layout>
+             
+            </v-flex>
+            
+          </v-layout>
         </v-card-text>
-    </v-card>
-    </v-col>
-<!-- </v-row>  -->
-</v-layout>
+        </v-col>
+      </v-card>
+      </v-col>
+    <!-- </v-flex> -->
+  </v-layout>
 </template>
+
 
 
 <script>
