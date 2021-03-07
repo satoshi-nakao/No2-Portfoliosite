@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'skytree1.ico' }
+      { rel: 'icon', type: 'vnd.microsoft.icon', href: 'cat.ico',sizes:"15x15"}
     ]
   },
 
